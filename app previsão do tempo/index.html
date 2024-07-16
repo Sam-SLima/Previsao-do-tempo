@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Previsão do tempo</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <link rel="stylesheet" href="./styles/global.css">
+</head>
+<body>
+  <span class="fundo-tela"></span>
+  <div class="PrevisaoDoTempo">
+    <form>
+      <div>
+        <i class="ph ph-map-pin"></i>
+        <input type="text" name="local" placeholder="Digite sua localização:">
+      </div>
+
+        <button type="submit">
+        <i class="ph ph-magnifying-glass"></i></button>  
+    </form>
+    <main>
+      <img id="fundoClima" src="./assets/icons/clouds.png" alt="clima">
+      <h1 id="temperatura">23°C</h1>
+      <h2 id="localidade">São Paulo</h2>
+    </main>
+    <footer>
+      <div class="blocoAr">
+        <i class="ph ph-drop-half-bottom"></i>
+
+        <div>
+          <strong id="umidade">64%</strong>
+          <p>Umidade</p>
+        </div>
+      </div>
+      <div class="blocoAr">
+        <i class="ph ph-wind"></i>
+
+        <div>
+          <strong id="ventos">12 km/h</strong>
+          <p>Ventos</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    column-gap: 32px;
+    text-align: center;
+}
+
+.blocoAr {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 8px;
+}
+
+.blocoAr i {
+    font-size: 54px;
+    font-weight: 00;
+}
+
+.blocoAr div {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocoAr div strong {
+    font-size: 28px;
+    line-height: 0.6;
+}
